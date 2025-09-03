@@ -267,8 +267,9 @@ export default function Home() {
           `)
             newTab.document.close()
           } else {
-            // 如果无法打开新标签，则尝试直接显示图片
-            window.location.href = dataUrl
+            if (typeof window !== "undefined") {
+              window.location.href = dataUrl
+            }
           }
         } catch (error) {
           console.error("Error opening new tab:", error)

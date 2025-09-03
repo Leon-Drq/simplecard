@@ -93,6 +93,8 @@ export default function PortfolioPage() {
 
   // 从localStorage加载用户点赞数据
   useEffect(() => {
+    if (typeof window === "undefined") return
+
     try {
       const savedLikes = localStorage.getItem("userLikes")
       if (savedLikes) {
@@ -105,6 +107,8 @@ export default function PortfolioPage() {
 
   // 切换点赞
   const toggleLike = (id: string) => {
+    if (typeof window === "undefined") return
+
     // 更新本地点赞状态
     if (!userLikes.includes(id)) {
       const updatedLikes = [...userLikes, id]
@@ -153,7 +157,7 @@ export default function PortfolioPage() {
           </div>
           <div className="flex items-center gap-2">
             <Link href="/">
-              <Button variant="outline" size="sm" className="text-gray-700">
+              <Button variant="outline" size="sm" className="text-gray-700 bg-transparent">
                 返回首页
               </Button>
             </Link>

@@ -14,6 +14,8 @@ export function FontDebug() {
   const brushScriptLoaded = useFontLoaded("Brush Script MT")
 
   useEffect(() => {
+    if (typeof window === "undefined") return
+
     // 尝试预加载所有字体
     preloadFont("Huiwen-mincho")
     preloadFont("Kaiti")
@@ -66,7 +68,14 @@ export function FontDebug() {
         </li>
       </ul>
       <p className="mt-2">
-        <button onClick={() => window.location.reload()} className="bg-gray-200 px-2 py-1 rounded text-gray-800">
+        <button
+          onClick={() => {
+            if (typeof window !== "undefined") {
+              window.location.reload()
+            }
+          }}
+          className="bg-gray-200 px-2 py-1 rounded text-gray-800"
+        >
           重新加载页面
         </button>
       </p>
