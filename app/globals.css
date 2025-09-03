@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  /* Card hover effects */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .card-preview-wrapper {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card-preview-wrapper:hover {
+    transform: rotateY(-5deg) rotateX(5deg) translateZ(10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Floating animation for card */
+  .card-preview-container {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Mouse tracking effect */
+  .card-preview-wrapper:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 1;
+    opacity: 0;
+    animation: shine 1.5s ease-in-out;
+  }
+
+  @keyframes shine {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    20% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  /* Add these new utility classes for background patterns */
+  .bg-pattern-dots {
+    background-image: radial-gradient(#d1d1d1 1px, transparent 1px), radial-gradient(#d1d1d1 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+
+  .bg-pattern-japanese-wave {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxMDAgMjAiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RkZGRkZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik0wLDEwIGMxMCwwLDEwLDEwLDIwLDEwIHMxMC0xMCwyMC0xMCBzMTAsMTAsMjAsMTAgczEwLTEwLDIwLTEwIHMxMCwxMCwyMCwxMCIvPjwvc3ZnPg==");
+    background-size: 100px 20px;
+  }
+
+  /* Background style transitions */
+  .bg-style-transition {
+    transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out;
+  }
+
+  /* Add smooth transition for background style changes */
+  .card-preview-wrapper {
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease-in-out, background-image
+      0.3s ease-in-out;
+  }
+
+  /* Add these animations for background style selection */
+  .animate-selection {
+    animation: selection-pulse 0.5s ease-in-out;
+  }
+
+  @keyframes selection-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Flowing quotes animation */
+  @keyframes flowRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+
+  @keyframes flowLeft {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .flowing-quote {
+    position: absolute;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.08);
+    font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", serif;
+    pointer-events: none;
+    z-index: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .flowing-quote-right {
+    animation: flowRight linear infinite;
+  }
+
+  .flowing-quote-left {
+    animation: flowLeft linear infinite;
+  }
+
+  /* 添加侧边菜单滑入动画 */
+  .animate-slide-in-right {
+    animation: slideInRight 0.3s ease-out forwards;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  /* 添加全屏预览模式的过渡效果 */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  /* 优化移动端触摸反馈 */
+  @media (max-width: 768px) {
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    input,
+    textarea {
+      font-size: 16px; /* 防止iOS自动缩放 */
+    }
+  }
+}
+
+/* 字体定义 - 确保字体文件正确加载，增加多种格式支持 */
+@font-face {
+  font-family: "Huiwen-mincho";
+  src: url("/fonts/huiwen-mincho.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 添加字体类，确保在移动端也能正确应用 */
+.font-huiwen {
+  font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", serif !important;
+}
+
+.font-kaiti {
+  font-family: "Kaiti", "楷体", "STKaiti", "Huiwen-mincho", serif !important;
+}
+
+.font-fangsong {
+  font-family: "FangSong", "仿宋", "STFangsong", "Huiwen-mincho", serif !important;
+}
+
+.font-lishu {
+  font-family: "LiSu", "隶书", "STLiti", "Huiwen-mincho", serif !important;
+}
+
+/* Add these new font classes for English handwriting fonts */
+.font-segoe-script {
+  font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive !important;
+}
+
+.font-comic-sans {
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive !important;
+}
+
+.font-brush-script {
+  font-family: "Brush Script MT", "Brush Script Std", cursive !important;
+}
+
+.font-cursive {
+  font-family: cursive !important;
+}
+
+/* For English text using Huiwen font */
+.font-huiwen-en {
+  font-family: "Huiwen-mincho", serif !important;
+}
+
+/* 添加字体加载状态样式 */
+.huiwen-loaded .font-huiwen-test {
+  color: green;
+}
+
+.huiwen-failed .font-huiwen-test {
+  color: red;
+}
+
+/* 移动端字体回退策略 */
+@media (max-width: 768px) {
+  .font-huiwen {
+    font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+  }
+
+  /* 添加系统字体回退 */
+  .font-kaiti {
+    font-family: "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+  }
+
+  .font-fangsong {
+    font-family: "FangSong", "仿宋", "STFangsong", "SimSun", "宋体", serif !important;
+  }
+
+  .font-lishu {
+    font-family: "LiSu", "隶书", "STLiti", "SimSun", "宋体", serif !important;
+  }
+
+  /* Mobile fallbacks for English fonts */
+  .font-segoe-script {
+    font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive !important;
+  }
+
+  .font-comic-sans {
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive !important;
+  }
+
+  .font-brush-script {
+    font-family: "Brush Script MT", "Brush Script Std", cursive !important;
+  }
+
+  .font-cursive {
+    font-family: cursive !important;
+  }
+}
