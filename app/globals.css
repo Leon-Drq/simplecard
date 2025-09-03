@@ -292,41 +292,43 @@
       font-size: 16px; /* 防止iOS自动缩放 */
     }
 
-    /* 进一步优化移动端文字显示，增加行高和字符间距 */
+    /* 大幅优化移动端文字显示，防止重叠 */
     .font-huiwen,
     .font-kaiti,
     .font-fangsong,
     .font-lishu {
-      line-height: 1.9 !important;
-      letter-spacing: 0.06em !important;
+      line-height: 2.4 !important;
+      letter-spacing: 0.08em !important;
+      word-spacing: 0.2em !important;
     }
 
     .font-segoe-script,
     .font-comic-sans,
     .font-brush-script,
     .font-cursive {
-      line-height: 1.7 !important;
-      letter-spacing: 0.03em !important;
+      line-height: 2.2 !important;
+      letter-spacing: 0.04em !important;
+      word-spacing: 0.1em !important;
     }
 
-    /* 确保移动端文字不会过于紧密 */
+    /* 确保移动端文字间距充足 */
     p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem !important;
     }
 
-    /* 添加移动端字体大小限制，防止过小 */
+    /* 提高移动端最小字体大小 */
     .font-huiwen,
     .font-kaiti,
     .font-fangsong,
     .font-lishu {
-      min-font-size: 16px;
+      min-font-size: 18px !important;
     }
 
     .font-segoe-script,
     .font-comic-sans,
     .font-brush-script,
     .font-cursive {
-      min-font-size: 14px;
+      min-font-size: 14px !important;
     }
   }
 }
@@ -342,36 +344,44 @@
 
 /* 添加字体类，确保在移动端也能正确应用 */
 .font-huiwen {
-  font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", serif !important;
+  font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-kaiti {
-  font-family: "Kaiti", "楷体", "STKaiti", "Huiwen-mincho", serif !important;
+  font-family: "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-fangsong {
-  font-family: "FangSong", "仿宋", "STFangsong", "Huiwen-mincho", serif !important;
+  font-family: "FangSong", "仿宋", "STFangsong", "SimSun", "宋体", serif !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-lishu {
-  font-family: "LiSu", "隶书", "STLiti", "Huiwen-mincho", serif !important;
+  font-family: "LiSu", "隶书", "STLiti", "SimSun", "宋体", serif !important;
+  font-feature-settings: "kern" 1;
 }
 
 /* Add these new font classes for English handwriting fonts */
 .font-segoe-script {
-  font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive !important;
+  font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", "Apple Chancery", cursive !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-comic-sans {
-  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive !important;
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", "-apple-system", cursive !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-brush-script {
-  font-family: "Brush Script MT", "Brush Script Std", cursive !important;
+  font-family: "Brush Script MT", "Brush Script Std", "Apple Chancery", "-apple-system", cursive !important;
+  font-feature-settings: "kern" 1;
 }
 
 .font-cursive {
-  font-family: cursive !important;
+  font-family: "-apple-system", "BlinkMacSystemFont", cursive !important;
+  font-feature-settings: "kern" 1;
 }
 
 /* For English text using Huiwen font */
@@ -391,36 +401,51 @@
 /* 移动端字体回退策略 */
 @media (max-width: 768px) {
   .font-huiwen {
-    font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+    font-family: "Huiwen-mincho", "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", "PingFang SC", "Microsoft YaHei", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* 添加系统字体回退 */
   .font-kaiti {
-    font-family: "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", serif !important;
+    font-family: "Kaiti", "楷体", "STKaiti", "SimSun", "宋体", "PingFang SC", "Microsoft YaHei", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .font-fangsong {
-    font-family: "FangSong", "仿宋", "STFangsong", "SimSun", "宋体", serif !important;
+    font-family: "FangSong", "仿宋", "STFangsong", "SimSun", "宋体", "PingFang SC", "Microsoft YaHei", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .font-lishu {
-    font-family: "LiSu", "隶书", "STLiti", "SimSun", "宋体", serif !important;
+    font-family: "LiSu", "隶书", "STLiti", "SimSun", "宋体", "PingFang SC", "Microsoft YaHei", serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Mobile fallbacks for English fonts */
+  /* 移动端英文字体优化 */
   .font-segoe-script {
-    font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive !important;
+    font-family: "Segoe Script", "Bradley Hand", "Comic Sans MS", "Apple Chancery", "-apple-system", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .font-comic-sans {
-    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive !important;
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", "-apple-system", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .font-brush-script {
-    font-family: "Brush Script MT", "Brush Script Std", cursive !important;
+    font-family: "Brush Script MT", "Brush Script Std", "Apple Chancery", "-apple-system", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .font-cursive {
-    font-family: cursive !important;
+    font-family: "-apple-system", "BlinkMacSystemFont", cursive !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

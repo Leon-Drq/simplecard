@@ -73,7 +73,7 @@ export default function QuoteCard({
           backgroundPosition: "center, center, center",
           textColor: "text-gray-700",
           beforeBackground:
-            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNDQkQ5QzgiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xek0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
+            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNDQkQ5QzgiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
           overlay: false,
           backdropFilter: undefined,
           boxShadow: undefined,
@@ -106,7 +106,7 @@ export default function QuoteCard({
           backgroundPosition: "center, center, center",
           textColor: "text-gray-800",
           beforeBackground:
-            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNlNmRiY2MiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xek0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
+            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNlNmRiY2MiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
           overlay: false,
           backdropFilter: undefined,
           boxShadow: undefined,
@@ -144,7 +144,7 @@ export default function QuoteCard({
           backgroundPosition: "center, center, center",
           textColor: "text-gray-700",
           beforeBackground:
-            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNDQkQ5QzgiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xek0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
+            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiNDQkQ5QzgiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
           overlay: false,
           backdropFilter: undefined,
           boxShadow: undefined,
@@ -194,6 +194,62 @@ export default function QuoteCard({
   // Get the font class
   const fontClass = getChineseFontClass()
 
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 768
+
+  const getResponsiveFontSize = (baseFontSize: number, type: "chinese" | "english" | "signature") => {
+    if (typeof window === "undefined") return baseFontSize
+
+    const isMobile = window.innerWidth <= 768
+    if (!isMobile) return baseFontSize
+
+    const scaleFactor = window.innerWidth / 375 // 以375px为基准宽度
+    const minScale = 0.7 // 最小缩放比例
+    const maxScale = 1.0 // 最大缩放比例
+    const finalScale = Math.max(minScale, Math.min(maxScale, scaleFactor))
+
+    return Math.round(baseFontSize * finalScale)
+  }
+
+  const getResponsivePadding = () => {
+    if (typeof window === "undefined") return "2rem"
+
+    const isMobile = window.innerWidth <= 768
+    if (!isMobile) return "2rem"
+
+    const scaleFactor = window.innerWidth / 375
+    const basePadding = 32 // 2rem = 32px
+    const minPadding = 16
+    const scaledPadding = Math.max(minPadding, basePadding * scaleFactor)
+
+    return `${scaledPadding}px`
+  }
+
+  const getResponsiveLineHeight = (type: "chinese" | "english" | "signature") => {
+    if (typeof window === "undefined") {
+      return type === "chinese" ? "1.8" : type === "english" ? "1.6" : "1.4"
+    }
+
+    const isMobile = window.innerWidth <= 768
+    if (!isMobile) {
+      return type === "chinese" ? "1.8" : type === "english" ? "1.6" : "1.4"
+    }
+
+    // 移动端使用更大的行高，但保持比例
+    return type === "chinese" ? "2.2" : type === "english" ? "2.0" : "1.8"
+  }
+
+  const getResponsiveSpacing = (baseSpacing: number) => {
+    if (typeof window === "undefined") return `${baseSpacing}px`
+
+    const isMobile = window.innerWidth <= 768
+    if (!isMobile) return `${baseSpacing}px`
+
+    const scaleFactor = window.innerWidth / 375
+    const scaledSpacing = Math.max(baseSpacing * 0.7, baseSpacing * scaleFactor)
+
+    return `${Math.round(scaledSpacing)}px`
+  }
+
   useEffect(() => {
     if (typeof window === "undefined") return
 
@@ -242,39 +298,50 @@ export default function QuoteCard({
           boxShadow: bgStyle.boxShadow,
           border: bgStyle.border,
           borderRadius: bgStyle.borderRadius,
+          padding: getResponsivePadding(),
         }}
-        className={`w-full relative p-8 ${bgStyle.beforeBackground ? "before:content-[''] before:absolute before:inset-0" : ""} ${bgStyle.beforeBackground}`}
+        className={`w-full relative ${bgStyle.beforeBackground ? "before:content-[''] before:absolute before:inset-0" : ""} ${bgStyle.beforeBackground}`}
       >
         {/* Overlay for custom background images to improve text readability */}
         {bgStyle.overlay && (
           <div className="absolute inset-0 backdrop-blur-[1px]" style={{ backgroundColor: bgStyle.overlayColor }}></div>
         )}
+
         <div
-          className="text-left space-y-1 absolute w-full px-8 left-0 hover:scale-[1.01] transition-transform duration-300 z-10"
-          style={{ top: `${englishPosition}%` }}
+          className="text-left space-y-1 absolute w-full left-0 hover:scale-[1.01] transition-transform duration-300 z-10"
+          style={{
+            top: `${englishPosition}%`,
+            paddingLeft: getResponsivePadding(),
+            paddingRight: getResponsivePadding(),
+          }}
         >
           {englishLines.map((line, index) => (
             <p
               key={`en-${index}`}
-              className={`leading-relaxed ${bgStyle.textColor} ${englishFontClass}`}
+              className={`${bgStyle.textColor} ${englishFontClass}`}
               style={{
                 fontWeight: "normal",
-                fontSize: `${englishFontSize}px`,
-                lineHeight: typeof window !== "undefined" && window.innerWidth <= 768 ? "1.7" : "1.5",
-                marginBottom: typeof window !== "undefined" && window.innerWidth <= 768 ? "6px" : "3px",
-                letterSpacing: typeof window !== "undefined" && window.innerWidth <= 768 ? "0.02em" : "0.01em",
+                fontSize: `${getResponsiveFontSize(englishFontSize, "english")}px`,
+                lineHeight: getResponsiveLineHeight("english"),
+                marginBottom: getResponsiveSpacing(6),
+                letterSpacing: isMobile ? "0.04em" : "0.02em",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
+                wordSpacing: isMobile ? "0.1em" : "normal",
               }}
             >
               {line}
             </p>
           ))}
         </div>
-        {/* Chinese text as main content - 使用CSS类名确保字体正确应用 */}
+
         <div
-          className="text-left space-y-1 absolute w-full px-8 left-0 hover:scale-[1.01] transition-transform duration-300 z-10"
-          style={{ top: `${chinesePosition}%` }}
+          className="text-left space-y-1 absolute w-full left-0 hover:scale-[1.01] transition-transform duration-300 z-10"
+          style={{
+            top: `${chinesePosition}%`,
+            paddingLeft: getResponsivePadding(),
+            paddingRight: getResponsivePadding(),
+          }}
         >
           {chineseLines.map((line, index) => (
             <p
@@ -282,29 +349,35 @@ export default function QuoteCard({
               className={`${line.trim() === "" ? "h-6" : ""} ${bgStyle.textColor} ${fontClass}`}
               style={{
                 fontWeight: "normal",
-                fontSize: `${chineseFontSize}px`,
-                lineHeight: typeof window !== "undefined" && window.innerWidth <= 768 ? "1.9" : "1.6",
-                marginBottom: typeof window !== "undefined" && window.innerWidth <= 768 ? "8px" : "4px",
-                letterSpacing: typeof window !== "undefined" && window.innerWidth <= 768 ? "0.05em" : "0.02em",
+                fontSize: `${getResponsiveFontSize(chineseFontSize, "chinese")}px`,
+                lineHeight: getResponsiveLineHeight("chinese"),
+                marginBottom: getResponsiveSpacing(8),
+                letterSpacing: isMobile ? "0.08em" : "0.04em",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
+                wordSpacing: isMobile ? "0.2em" : "0.1em",
               }}
             >
               {line}
             </p>
           ))}
         </div>
+
         <div
-          className="text-right absolute w-full px-8 right-0 hover:scale-[1.02] transition-transform duration-300 z-10"
-          style={{ top: `${signaturePosition}%` }}
+          className="text-right absolute w-full right-0 hover:scale-[1.02] transition-transform duration-300 z-10"
+          style={{
+            top: `${signaturePosition}%`,
+            paddingLeft: getResponsivePadding(),
+            paddingRight: getResponsivePadding(),
+          }}
         >
           <p
             className={`${bgStyle.textColor} ${englishFontClass}`}
             style={{
               fontWeight: "normal",
-              fontSize: `${signatureFontSize}px`,
-              lineHeight: typeof window !== "undefined" && window.innerWidth <= 768 ? "1.7" : "1.5",
-              letterSpacing: typeof window !== "undefined" && window.innerWidth <= 768 ? "0.02em" : "0.01em",
+              fontSize: `${getResponsiveFontSize(signatureFontSize, "signature")}px`,
+              lineHeight: getResponsiveLineHeight("signature"),
+              letterSpacing: isMobile ? "0.03em" : "0.02em",
               transition: "font-size 0.3s ease, transform 0.3s ease",
             }}
           >
