@@ -125,7 +125,7 @@ export default function QuoteCard({
           backgroundPosition: "center, center, center",
           textColor: "text-gray-200",
           beforeBackground:
-            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiM0MDQwNDAiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xek0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
+            "before:bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiM0MDQwNDAiIGZpbGwtb3BhY2l0eT0iMC4wMiIgZD0iTTAgMGg0MHY0MEgwVjB6bTIwIDJjLS41NTIgMC0xIC40NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xem0wIDM2Yy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXptMTgtMThjLS41NTIgMC0xIC44NDgtMSAxcy40NDggMSAxIDEgMS0uNDQ4IDEtMS0uNDQ4LTEtMS0xek0yIDIwYy0uNTUyIDAtMSAuNDQ4LTEgMXMuNDQ4IDEgMSAxIDEtLjQ0OCAxLTEtLjQ0OC0xLTEtMXoiLz48L2c+PC9zdmc+')]",
           overlay: false,
           backdropFilter: undefined,
           boxShadow: undefined,
@@ -258,8 +258,9 @@ export default function QuoteCard({
               style={{
                 fontWeight: "normal",
                 fontSize: `${englishFontSize}px`,
-                lineHeight: window.innerWidth <= 768 ? "1.6" : "1.4",
-                marginBottom: window.innerWidth <= 768 ? "4px" : "2px",
+                lineHeight: window.innerWidth <= 768 ? "1.7" : "1.5",
+                marginBottom: window.innerWidth <= 768 ? "6px" : "3px",
+                letterSpacing: window.innerWidth <= 768 ? "0.02em" : "0.01em",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
               }}
@@ -280,8 +281,9 @@ export default function QuoteCard({
               style={{
                 fontWeight: "normal",
                 fontSize: `${chineseFontSize}px`,
-                lineHeight: window.innerWidth <= 768 ? "1.8" : "1.5",
-                marginBottom: window.innerWidth <= 768 ? "6px" : "3px",
+                lineHeight: window.innerWidth <= 768 ? "1.9" : "1.6",
+                marginBottom: window.innerWidth <= 768 ? "8px" : "4px",
+                letterSpacing: window.innerWidth <= 768 ? "0.05em" : "0.02em",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
               }}
@@ -299,7 +301,8 @@ export default function QuoteCard({
             style={{
               fontWeight: "normal",
               fontSize: `${signatureFontSize}px`,
-              lineHeight: window.innerWidth <= 768 ? "1.6" : "1.4",
+              lineHeight: window.innerWidth <= 768 ? "1.7" : "1.5",
+              letterSpacing: window.innerWidth <= 768 ? "0.02em" : "0.01em",
               transition: "font-size 0.3s ease, transform 0.3s ease",
             }}
           >

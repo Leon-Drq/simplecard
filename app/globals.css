@@ -292,26 +292,41 @@
       font-size: 16px; /* 防止iOS自动缩放 */
     }
 
-    /* 添加移动端文字显示优化 */
+    /* 进一步优化移动端文字显示，增加行高和字符间距 */
     .font-huiwen,
     .font-kaiti,
     .font-fangsong,
     .font-lishu {
-      line-height: 1.8 !important;
-      letter-spacing: 0.05em;
+      line-height: 1.9 !important;
+      letter-spacing: 0.06em !important;
     }
 
     .font-segoe-script,
     .font-comic-sans,
     .font-brush-script,
     .font-cursive {
-      line-height: 1.6 !important;
-      letter-spacing: 0.02em;
+      line-height: 1.7 !important;
+      letter-spacing: 0.03em !important;
     }
 
     /* 确保移动端文字不会过于紧密 */
     p {
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* 添加移动端字体大小限制，防止过小 */
+    .font-huiwen,
+    .font-kaiti,
+    .font-fangsong,
+    .font-lishu {
+      min-font-size: 16px;
+    }
+
+    .font-segoe-script,
+    .font-comic-sans,
+    .font-brush-script,
+    .font-cursive {
+      min-font-size: 14px;
     }
   }
 }
