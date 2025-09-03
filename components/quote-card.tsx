@@ -258,6 +258,8 @@ export default function QuoteCard({
               style={{
                 fontWeight: "normal",
                 fontSize: `${englishFontSize}px`,
+                lineHeight: window.innerWidth <= 768 ? "1.6" : "1.4",
+                marginBottom: window.innerWidth <= 768 ? "4px" : "2px",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
               }}
@@ -274,10 +276,12 @@ export default function QuoteCard({
           {chineseLines.map((line, index) => (
             <p
               key={`zh-${index}`}
-              className={`leading-relaxed ${line.trim() === "" ? "h-6" : ""} ${bgStyle.textColor} ${fontClass}`}
+              className={`${line.trim() === "" ? "h-6" : ""} ${bgStyle.textColor} ${fontClass}`}
               style={{
                 fontWeight: "normal",
                 fontSize: `${chineseFontSize}px`,
+                lineHeight: window.innerWidth <= 768 ? "1.8" : "1.5",
+                marginBottom: window.innerWidth <= 768 ? "6px" : "3px",
                 transition: "font-size 0.3s ease, transform 0.3s ease",
                 transform: `translateY(${Math.sin(index * 0.5) * 2}px)`,
               }}
@@ -295,10 +299,11 @@ export default function QuoteCard({
             style={{
               fontWeight: "normal",
               fontSize: `${signatureFontSize}px`,
+              lineHeight: window.innerWidth <= 768 ? "1.6" : "1.4",
               transition: "font-size 0.3s ease, transform 0.3s ease",
             }}
           >
-            — {signature}
+            {signature}
           </p>
         </div>
       </div>

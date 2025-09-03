@@ -519,7 +519,7 @@ export default function Home() {
                   size="sm"
                   onClick={handleShare}
                   disabled={isDownloading}
-                  className="text-gray-700"
+                  className="text-gray-700 bg-transparent"
                 >
                   <Share2 size={16} className="mr-1" />
                   分享
@@ -738,7 +738,11 @@ export default function Home() {
               {mobileEditMode === "layout" && (
                 <div className="mt-4 animate-fade-in">
                   <div className="mb-4">
-                    <div className="flex justify-between items-center mb-1">
+                    <div
+                      className="flex justify-between items-center mb-1
+</cut_off_point>
+                    "
+                    >
                       <label className="text-sm font-medium text-gray-700">中文字体大小</label>
                       <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">
                         {state.chineseFontSize}px
@@ -816,11 +820,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <img src="/images/chicken-logo.png" alt="鸡汤卡片" className="w-10 h-10 object-contain" />
-            <h1
-              className={`${isMobile ? "text-lg" : "text-xl sm:text-2xl"} font-medium text-gray-900 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600`}
-            >
-              鸡汤卡片生成器
-            </h1>
+            {!isMobile && (
+              <h1 className="text-xl sm:text-2xl font-medium text-gray-900 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
+                鸡汤卡片生成器
+              </h1>
+            )}
           </div>
 
           {/* 桌面端按钮 */}

@@ -291,6 +291,28 @@
     textarea {
       font-size: 16px; /* 防止iOS自动缩放 */
     }
+
+    /* 添加移动端文字显示优化 */
+    .font-huiwen,
+    .font-kaiti,
+    .font-fangsong,
+    .font-lishu {
+      line-height: 1.8 !important;
+      letter-spacing: 0.05em;
+    }
+
+    .font-segoe-script,
+    .font-comic-sans,
+    .font-brush-script,
+    .font-cursive {
+      line-height: 1.6 !important;
+      letter-spacing: 0.02em;
+    }
+
+    /* 确保移动端文字不会过于紧密 */
+    p {
+      margin-bottom: 0.25rem;
+    }
   }
 }
 
